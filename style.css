@@ -1,0 +1,85 @@
+
+.shop-section{
+    display: flex; /*all boxes in same line*/
+    justify-content: space-evenly; /*space between boxes*/
+    width: 1000px; /*size of whole box*/
+    height: 800px;
+    flex-wrap: wrap; /*ek row ma 2 aya baki boxes neecha*/
+    margin-left: 400px;
+    margin-top: 50px;
+}
+.box{
+   height: 40%; /*box for image and content*/
+   width: 40%;
+   background-color:  rgb(203 200 200);
+   padding: 20px 0px 15px;
+   margin: 15px 15px 15px 15px;
+   flex-basis: 40%; /*box ka conatiner ha adha upar adha neecha*/
+   justify-content: space-around;
+   color: #000;
+   text-align: center;
+   align-items: center;
+}
+.box-img{ /*image in box*/
+  height: 220px;
+  width: 350px;
+  background-size:contain;
+  margin: 1rem 1rem 1rem 1rem;
+
+}
+.box-content{
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+nav { /*navbar containing home button*/
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+  gap: 0.5rem;
+  border-bottom: solid 1px #aaa;
+  background-color:  rgb(203 200 200);
+  padding-right: 1700px;
+}
+
+nav a { /*link on navbar*/
+  display: inline-block;
+  min-width: 9rem;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  border: solid 1px rgb(22, 22, 22);
+  text-align: center;
+  text-decoration: none;
+  color: #1b1b1b;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-weight: bolder;
+}
+
+nav a[aria-current='page'] { /*navbar ki home box*/
+  color: #000;
+  background-color: #a7a1a1;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+ 
+}
+.project-link { /*clickable links*/
+  background-color: #fff;
+  padding: 10px 30px;
+  border-radius: 8px;
+  color: #212121;
+  text-decoration: none;
+  border: 2px solid #212121;
+  margin-top: 8px;
+  font-family: math;
+  font-size: larger;
+  font-weight: bold;
+}
